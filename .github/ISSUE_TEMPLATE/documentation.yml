@@ -1,0 +1,27 @@
+name: Documentation improvement
+description: Report a concrete documentation gap or correction
+title: "docs: "
+labels:
+  - documentation
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect?
+      description: Quote the relevant section and explain the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed improvement
+      description: Include a verified command, UI sequence, or official source when possible.
+    validations:
+      required: true
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Contribution check
+      options:
+        - label: This is a meaningful documentation improvement, not artificial profile activity.
+          required: true
